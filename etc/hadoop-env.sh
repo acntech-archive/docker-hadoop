@@ -15,6 +15,11 @@
 # limitations under the License.
 
 # Set Hadoop-specific environment variables here.
+export JAVA_HOME="/opt/java/default"
+export HADOOP_HOME="/opt/hadoop/default"
+export HADOOP_CONF_DIR="/etc/hadoop/"
+export HADOOP_LOG_DIR="/var/log/hadoop"
+export HADOOP_PID_DIR="/var/run/hadoop"
 
 # The only required environment variable is JAVA_HOME.  All others are
 # optional.  When running a distributed configuration it is best to
@@ -22,7 +27,6 @@
 # remote nodes.
 
 # The java implementation to use.
-export JAVA_HOME="/opt/java/default"
 export JAVA_HOME=${JAVA_HOME}
 
 # The jsvc implementation to use. Jsvc is required to run secure datanodes
